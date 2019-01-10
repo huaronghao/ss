@@ -1,0 +1,6 @@
+#!/bin/bash
+service sshd start
+#yum makecache fast
+#yum update
+cd /usr/sbin
+./shadowsocks.sh 2>&1 | tee shadowsocks.log
